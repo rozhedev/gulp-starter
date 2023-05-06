@@ -72,3 +72,39 @@
     @include bp(md) {
     }
 }
+
+// * UN- ORDERED LISTS
+
+.ordered-list {
+    counter-reset: myCounter;
+
+    li {
+        list-style: none;
+        margin: 0 0 0 1rem;
+
+        &::before {
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            color: #9A0014;
+            display: inline;
+            font-weight: 600;
+            margin: 0 0.66rem 0 0;
+        }
+    }
+}
+
+.unordered-list {
+    li {
+        margin: 0.4rem 0;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 0.4rem;
+            height: 0.4rem;
+            border-radius: 999px;
+            background-color: #9A0014;
+            margin: 0rem 0.5rem 0rem 0.5rem;
+        }
+    }
+}

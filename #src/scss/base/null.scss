@@ -45,10 +45,9 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-
-    body._lock {
-        overflow: hidden;
-    }
+}
+body._lock {
+    overflow: hidden !important;
 }
 input,
 button,

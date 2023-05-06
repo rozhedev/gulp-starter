@@ -9,3 +9,4 @@ import "./modules/validation";
 import "./components/preloader";
 import "./components/select";
 import "./components/burger";
+import "./components/modals";
